@@ -1,0 +1,383 @@
+* {
+    text-decoration: none;
+    /* color: black; */
+    /* text-align: center; */
+    box-sizing: border-box;
+    font-size: 20px;
+    margin: 0px;
+}
+
+body {
+    overflow-x: hidden;
+    margin: 0px;
+    font-family: 'Anuphan', sans-serif;
+    box-sizing: border-box;
+    font-size: 20px;
+    /* background-color: rgb(143, 143, 143);
+    background-image: url("https://images.pexels.com/photos/531880/pexels-photo-531880.jpeg?auto=compress&cs=tinysrgb&w=600");
+    background-repeat: no-repeat;
+    background-size: contain; */
+}
+
+a {
+    color: black;
+}
+
+i {
+    font-size: 50px;
+    /* color: black; */
+}
+
+#bodybg {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: -1;
+}
+
+#nav-bar-holder {
+    /* background-color: ; */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+}
+
+#nav-bar {
+    display: block;
+    text-align: center;
+    /* width: 100%; */
+    margin: 0;
+    /* color: black; */
+}
+
+#menu {
+    background-color: white;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.nav-items {
+    /* padding: 5px 20px 5px 20px; */
+    width: 100vw;
+    padding: 10px;
+    margin: 0;
+    font-size: 0;
+    font-size: 24px;
+    color: black;
+    border-right: 2px solid white;
+    background-color: #e9e9e9;
+}
+
+.nav-items:hover {
+    color: white;
+    background-color: #4e4e4e;
+}
+
+
+#nav-bar a {
+    /* background-color: lightblue; */
+}
+
+#home {
+    /* border: none; */
+}
+
+#name {
+    padding: 10px;
+    /* font-size: 24px; */
+    /* background-color: lightblue; */
+    /* color: white; */
+    width: 100%;
+    text-align: center;
+    /* border: 1px solid black; */
+    background-color: #e9e9e9;
+}
+
+#name * {
+    color: white;
+}
+
+#name *:hover {
+
+    background-color: #00152c;
+}
+
+#About {
+    /* overflow: hidden; */
+    background-color: #61828A;
+    /* border: 1px solid black; */
+    margin: auto;
+    margin-bottom: 0px;
+    position: relative;
+    top: 14vh;
+    /* transform: translate(); */
+    width: 70vw;
+    height: 80vh;
+}
+
+/* #Bg {
+    overflow: hidden;
+    margin-top: 50px;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+} */
+
+#Pos {
+    text-align: center;
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#Pos * {
+    flex: 1;
+    width: 50%;
+    padding: 20px;
+}
+
+#Pos img {
+    border-radius: 50%;
+}
+
+h3 {
+    text-align: left;
+}
+
+
+.container {
+    box-sizing: border-box;
+    font-size: large;
+    margin: auto;
+    margin-bottom: 20px;
+    background-color: #adfddf;
+    width: 60vw;
+    border-top: 52px solid transparent;
+    margin-top: -50px;
+    background-clip: padding-box;
+
+}
+
+.container:before {
+    /* content: ""; */
+    position: absolute;
+    top: -25px;
+    left: 0;
+    right: 0;
+    border-top: 1px solid #ccc;
+}
+
+#Skill-list {
+    flex-wrap: wrap;
+}
+
+.header {
+    cursor: pointer;
+    padding: 10px;
+    /* font-size: xx-large; */
+    width: 100%;
+    text-align: center;
+    background-color: rgb(71, 71, 71);
+    color: white;
+    /* border-bottom: 1px solid white; */
+}
+
+.header:hover {
+    background-color: rgb(48, 48, 48);
+    color: white;
+}
+
+.list {
+    /* display: flex; */
+    padding: 10px;
+    text-align: center;
+    /* position: relative; */
+    /* display: flex; */
+    display: none;
+    flex-wrap: wrap;
+}
+
+.list-item {
+    text-align: left;
+    padding: 10px;
+    flex: 1;
+}
+
+
+.Project,
+.Profile,
+.Achievements {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.project-name,
+.Profile-name {
+    width: 50%;
+    flex: 1;
+}
+
+.Achievement-name {
+    width: 70%;
+}
+
+.project-exp,
+.Profile-exp {
+    width: 50%;
+    flex: 1;
+}
+
+.Achievement-exp {
+    width: 30%;
+}
+
+#Education-div {
+    margin-top: 12vh;
+}
+
+#Education-list .list-item {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: left;
+}
+
+#Education-list .list-item div {
+    flex: 1;
+}
+
+.year {
+    text-align: right;
+}
+
+#Skill-list {
+    /* display: flex;
+    flex-wrap: wrap; */
+}
+
+#Skill-list .list-item {
+    text-align: center;
+    /* font-size: 150px; */
+    flex: 1;
+}
+
+#Footer {
+    background-color: rgb(6, 56, 80);
+    width: 100vw;
+    display: flex;
+}
+
+#Follow-footer {
+    width: 50%;
+}
+
+#Contact-footer {
+    display: block;
+}
+
+#Contact-head {
+    display: block;
+    text-align: center;
+}
+
+#Footer * {
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+#Contact {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#Contact .list-item {
+    flex: 1;
+    width: 50%;
+}
+
+#Contact a:hover {
+    color: grey;
+}
+
+#Follow {
+    display: flex;
+}
+
+.media a {
+    text-align: center;
+    flex: 1;
+}
+
+.media:hover i {
+    font-size: 55px;
+}
+
+/* #Skill-list i {
+    font-size: 50px;
+}
+ */
+
+
+/* @media only screen and (max-width: 1048px) {
+    #nav-bar {
+        display: none;
+    }
+
+    #resp:hover #nav-bar {
+        display: block;
+        background-color: #002147;
+        padding: 5px;
+    }
+
+} */
+
+/* @media only screen and (min-width: 1048px) { */
+#menu {
+    display: none;
+}
+
+#nav-bar {
+    display: flex;
+    flex-wrap: wrap;
+    /* width: 50%; */
+}
+
+#resp {
+    width: 70%;
+}
+
+.nav-items {
+    /* border-left: 1px solid white; */
+    flex: 1;
+}
+
+/* } */
+
+/*
+@media only screen and (max-width:800px) {
+    .container {
+        width: 100vw;
+    }
+
+    .list-item {
+        display: block;
+        width: 100%;
+    }
+
+    #Education-list {
+        display: block;
+    }
+
+    .list {}
+}*/
