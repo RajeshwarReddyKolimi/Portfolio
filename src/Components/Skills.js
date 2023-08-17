@@ -16,7 +16,7 @@ import { SiExpress, SiMysql } from "react-icons/si";
 export default function Skills() {
     return (
         <section id="skills" className="section skills-section">
-            <h2>Skills</h2>
+            <h2 className="section-header">Skills</h2>
             <ul className="skills">
                 <li className="skill-item">
                     <BiLogoHtml5

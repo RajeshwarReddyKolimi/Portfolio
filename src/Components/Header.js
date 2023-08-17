@@ -4,7 +4,7 @@ import { BiSolidSun } from "react-icons/bi";
 import { HiMenu } from "react-icons/hi";
 export default function Header() {
     const [scrolled, setScrolled] = useState(false);
-    const [showMenu, setShowMenu] = useState(true);
+    const [showMenu, setShowMenu] = useState(false);
     const handleScroll = () => {
         if (window.scrollY > 0) {
             setScrolled(true);
@@ -62,10 +62,15 @@ export default function Header() {
                 </a>
 
                 <div className="flex-buffer"></div>
+                <a
+                    href="#footer"
+                    className={` nav-flex-item  ${
+                        showMenu ? "nav-show-items" : ""
+                    }`}
+                >
+                    Contact Me
+                </a>
             </ul>
-            <a href="#footer" className="buttons-special">
-                Contact Me
-            </a>
             <button
                 className="menu-icon nav-header-item"
                 onClick={() => setShowMenu((prev) => !prev)}

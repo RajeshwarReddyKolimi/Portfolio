@@ -4,7 +4,7 @@ import "./main.css";
 export default function About() {
     return (
         <section id="about" className="section about-section">
-            <h2>About Me</h2>
+            <h2 className="section-header">About Me</h2>
             <div className="details-div">
                 <img
                     className="profile-pic"
@@ -19,8 +19,9 @@ export default function About() {
                         I am a 2023 Engineering graduate, eager to launch my
                         career as a Full Stack Developer. I have a solid
                         foundation in computer science and a passion for both
-                        front-end and back-end development. Good problem solving skills. I am well-equipped
-                        to contribute to dynamic and innovative projects.
+                        front-end and back-end development. Good problem solving
+                        skills. I am well-equipped to contribute to dynamic and
+                        innovative projects.
                     </div>
                     <hr className="line" />
                     <div className="detail">

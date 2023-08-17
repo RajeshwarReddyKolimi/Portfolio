@@ -19,10 +19,8 @@ export default function Hero() {
         };
     }, []);
     let imageSrc = `https://picsum.photos/id/6/${w}/${h}`;
-    // let imageSrc = `https://picsum.photos/id/6/700/400`;
 
     const [scrolled, setScrolled] = useState(false);
-
     const handleScroll = () => {
         if (window.scrollY > 0) {
             setScrolled(true);

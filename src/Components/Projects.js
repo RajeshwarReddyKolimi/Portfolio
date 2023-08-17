@@ -29,7 +29,7 @@ export default function Projects() {
     const skills6 = ["Arduino", "Arduino IDE", "GPS", "GSM"];
     return (
         <section id="projects" className="section projects-section">
-            <h2>Projects</h2>
+            <h2 className="section-header">Projects</h2>
             <div className="projects">
                 <ProjectCard
                     imgSrc="5"

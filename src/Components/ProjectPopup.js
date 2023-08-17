@@ -1,6 +1,6 @@
 import React from "react";
 import "./main.css";
-import { GrClose } from "react-icons/gr";
+import { CgClose } from "react-icons/cg";
 import { FiExternalLink } from "react-icons/fi";
 import { BiLogoGithub } from "react-icons/bi";
 export default function ProjectPopup(props) {
@@ -32,7 +32,7 @@ export default function ProjectPopup(props) {
                         onClick={() => setShowProject(false)}
                         className="popup-close"
                     >
-                        <GrClose />
+                        <CgClose />
                     </button>
                 </div>
                 <div className="project-details">

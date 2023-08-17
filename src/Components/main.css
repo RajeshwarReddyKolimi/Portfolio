@@ -10,69 +10,38 @@ html {
     width: 80vw;
     margin: auto;
     height: 100vh;
-    padding-top: 10vh;
+    padding-top: 5rem;
     scroll-snap-align: start;
     scroll-snap-stop: always;
     overflow: auto;
 }
 .section {
     /* opacity: 0; */
-    transition: opacity 0.5s;
+    /* transition: opacity 0.5s; */
 }
 .section.visible {
     opacity: 1;
 }
-:root {
-    --trans1: 0.1;
-    --trans2: 0.2;
-    --trans3: 0.3;
-    --trans4: 0.4;
-    --trans5: 0.5;
-    --trans6: 0.6;
-    --trans7: 0.7;
-    --trans8: 0.8;
-    --trans9: 0.9;
-    --section-width: 80vw;
-    --theme-color: 255, 255, 255;
-    --theme-bg-color: 39, 40, 41;
+.section-header {
+    margin: 0rem;
 }
-
-.theme-light {
-    --theme-color: 39, 40, 41;
-    --theme-bg-color: 255, 255, 255;
-    transition: 2s;
-}
-
-.theme-dark {
-    --theme-color: 255, 255, 255;
-    --theme-bg-color: 39, 40, 41;
-    transition: 2s;
-}
-
 ::-webkit-scrollbar {
     display: none;
 }
 body {
-    /* background-color: #05284777; */
-    color: rgba(var(--theme-color));
+    color: white;
     margin: 0px;
 }
-
 a {
     text-decoration: none;
-    color: rgba(var(--theme-color));
+    color: white;
 }
-
 li {
     list-style: none;
 }
 
 h1 {
     margin: 0px;
-}
-
-h2 {
-    /* padding: 2rem 0rem 0rem; */
 }
 
 button {
@@ -85,20 +54,22 @@ button {
     position: fixed;
     padding: 0.5rem;
     bottom: 1rem;
+    font-size: 1.2rem;
     right: 1rem;
     color: white;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(20, 20, 20);
+    background-color: rgb(30, 30, 30);
     border: 1px solid white;
     border-radius: 50%;
     opacity: 0;
     pointer-events: none;
     transition: opacity 0.5s;
+    z-index: 40;
 }
 .go-top:hover {
-    background-color: black;
+    background-color: rgb(10, 10, 10);
 }
 .go-top-scrolled {
     opacity: 1;
@@ -106,7 +77,7 @@ button {
 }
 .nav-header {
     width: 100%;
-
+    padding: 0rem 1rem;
     position: fixed;
     top: 0;
     left: 0;
@@ -118,7 +89,7 @@ button {
     gap: 1rem;
 }
 .nav-header-scrolled {
-    background-color: rgb(19, 19, 20);
+    background-color: rgb(20, 20, 20);
 }
 
 .nav-header-item {
@@ -138,62 +109,62 @@ button {
 }
 
 .nav-title-a:hover {
-    color: rgba(var(--theme-color), var(--trans9));
+    color: rgba(255, 255, 255, 0.9);
 }
 
 .nav-flex-item {
     font-weight: bold;
     padding: 1rem 1.5rem;
-    /* transition: 0.5s; */
-    color: rgba(var(--theme-color));
+    transition: 0.5s;
+    color: white;
     border-bottom: 2px solid transparent;
 }
 
 .nav-flex-item:hover {
-    border-bottom: 2px solid rgba(var(--theme-color));
+    border-bottom: 2px solid white;
 }
 
 .buttons {
     width: 10rem;
     font-weight: bold;
-    background-color: rgba(var(--theme-color), var(--trans1));
-    color: rgba(var(--theme-color));
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
     padding: 0.5rem 1.5rem;
-    border: 2px solid rgba(var(--theme-color));
+    border: 2px solid white;
     transition: 0.5s;
 }
 .buttons-special {
     width: 10rem;
     font-weight: bold;
-    background-color: rgba(var(--theme-color));
+    background-color: white;
     padding: 0.5rem 1.5rem;
-    border: 2px solid rgba(var(--theme-color));
-    color: rgba(var(--theme-bg-color));
+    border: 2px solid white;
+    color: rgb(40, 40, 40);
     transition: 0.5s;
 }
 .buttons-special:hover {
-    background-color: rgba(var(--theme-color), var(--trans1));
+    background-color: rgba(255, 255, 255, 0.1);
     /* background: #034694; */
-    color: rgba(var(--theme-color));
+    color: white;
 }
 .buttons:hover {
-    background-color: rgba(var(--theme-color));
-    color: rgba(var(--theme-bg-color));
+    background-color: white;
+    color: rgb(40, 40, 40);
 }
 
 .buttons:active {
-    background-color: rgba(var(--theme-color), var(--trans8));
+    background-color: rgba(255, 255, 255, 0.8);
 }
 
 .menu-icon {
     display: none;
-    color: rgba(var(--theme-color));
+    color: white;
     font-size: 1.5rem;
     right: 0;
 }
 
 .menu-icon:hover {
-    color: rgba(var(--theme-color), var(--trans8));
+    color: rgba(255, 255, 255, 0.8);
 }
 
 .hero {
@@ -227,7 +198,7 @@ button {
 
 .bg-image::after {
     content: "";
-    background-color: rgba(var(--theme-bg-color));
+    background-color: rgb(40, 40, 40);
     opacity: 0.8;
     position: fixed;
     width: 100vw;
@@ -235,7 +206,6 @@ button {
     top: 0;
     left: 0;
     z-index: 1;
-    transition: 2s;
 }
 .hero-content {
     position: absolute;
@@ -254,7 +224,7 @@ button {
 
 .about-section {
     /* height: 100vh; */
-    width: 80%;
+    width: 80vw;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -269,7 +239,7 @@ button {
     margin: 1rem;
     display: flex;
     flex-direction: row;
-    align-items:start;
+    align-items: start;
     gap: 1rem;
     height: 100%;
 }
@@ -317,7 +287,7 @@ button {
     width: 4rem;
     height: 4rem;
     border-radius: 50%;
-    box-shadow: 0px 0px 4px 2px rgba(var(--theme-color), var(--trans7));
+    box-shadow: 0px 0px 4px 2px rgb(255, 255, 255, 0.7);
 }
 
 .skill-icon {
@@ -329,7 +299,7 @@ button {
     justify-content: center;
     align-items: center;
     transition: 0.5s;
-    background-color: rgba(255, 255, 255, var(--trans8));
+    background-color: rgba(255, 255, 255, 0.8);
 }
 
 .skill-item:hover .skill-icon {
@@ -395,16 +365,13 @@ button {
     width: 100%;
     height: 100%;
     z-index: 40;
-    /* background-color: white; */
     background-color: rgba(27, 27, 27, 0.2);
 }
 .project-popup {
     text-align: left;
     padding: 1rem;
-    /* color: black;
-    background-color: rgb(158, 158, 158); */
     color: white;
-    background-color: rgb(75, 75, 75);
+    background-color: rgb(30, 30, 30);
     width: 80%;
     height: 80vh;
     position: fixed;
@@ -415,19 +382,21 @@ button {
     overflow: scroll;
 }
 .popup-close {
-    color: white;
+    position: absolute;
+    right: 0%;
+    top: 10%;
     width: 2.5rem;
     height: 2.5rem;
-    font-size: 1rem;
-    background-color: rgb(109, 109, 109);
-    border: 1px solid rgb(70, 70, 70);
+    font-size: 1.5rem;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: 0.5s;
+    color: white;
 }
 .popup-close:hover {
-    background-color: rgb(70, 70, 70);
+    background-color: rgb(20, 20, 20);
 }
 .project-details {
     display: flex;
@@ -445,6 +414,7 @@ button {
     align-items: center;
     gap: 1rem;
     flex-wrap: wrap;
+    padding-right: 15%;
 }
 .popup-link-icon {
     cursor: pointer;
@@ -482,7 +452,7 @@ button {
 }
 .skill-used {
     color: white;
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: rgba(0, 0, 0, 0.2);
     padding: 1rem;
 }
 
@@ -502,7 +472,7 @@ button {
     margin: 1rem auto;
     text-align: center;
     flex: 1;
-    height: 100%;
+    height: 100vh;
     width: 90%;
     padding: 2rem;
     display: flex;
@@ -547,9 +517,9 @@ button {
     .section {
         width: 100vw;
     }
-    .about-container {
-        width: 100%;
-    }
+    /* .about-container {
+        width: 100vw;
+    } */
     .projects {
         grid-template-columns: repeat(auto-fill, 250px);
     }
@@ -560,7 +530,7 @@ button {
 @media screen and (max-width: 860px) {
     .nav-header {
         height: 5rem;
-        background-color: rgba(var(--theme-bg-color));
+        background-color: rgb(20, 20, 20);
     }
 
     .menu-icon {
@@ -569,7 +539,7 @@ button {
     }
 
     .nav-list {
-        background-color: rgba(var(--theme-bg-color));
+        background-color: rgb(20, 20, 20);
         width: 100%;
         padding: 0;
         position: fixed;
@@ -577,7 +547,6 @@ button {
         left: 0%;
         top: 5rem;
         flex-direction: column;
-        /* transition: 2s; */
     }
 
     .nav-flex-item {
@@ -586,7 +555,7 @@ button {
         height: 0px;
         overflow: hidden;
         pointer-events: none;
-        transition: 1s;
+        transition: 0.5s;
         font-size: 0rem;
         border: 0px;
         border: 0px solid transparent;
@@ -595,7 +564,7 @@ button {
     .nav-show-items {
         padding: 1.5rem;
         border: 0px solid transparent;
-        border-top: 1px solid rgba(var(--theme-color), var(--trans1));
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
         font-size: 1rem;
         height: 100%;
         pointer-events: all;
@@ -603,15 +572,16 @@ button {
 
     .nav-flex-item:hover {
         border: 0px solid transparent;
-        background-color: rgba(var(--theme-color), var(--trans1));
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        background-color: rgb(25, 25, 25);
     }
 
     .skills {
         grid-template-columns: repeat(3, 100px);
     }
 
-    :root {
-        --section-width: 100vw;
+    .section {
+        width: 100vw;
     }
 
     .project-popup {
@@ -640,14 +610,18 @@ button {
         width: 50%;
     }
 }
-@media screen and (max-width: 360px) {
-    body{
-        font-size: 12px;
-    }
-    .buttons, .buttons-special{
+@media screen and (max-width: 380px) {
+    .buttons,
+    .buttons-special {
+        padding: 0.4rem;
         width: 8rem;
     }
     .profile-pic {
         width: 70%;
+    }
+}
+@media screen and (max-height: 520px) {
+    .project-popup {
+        height: 95vh;
     }
 }
