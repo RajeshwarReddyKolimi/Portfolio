@@ -55,11 +55,11 @@ export default function Hero() {
                     </h1>
                     <h2>Full Stack Developer</h2>
                     <div className="flex-list">
-                        <a href="#about" className="buttons-special">
-                            About
-                        </a>
-                        <a href="#projects" className="buttons">
+                        <a href="#projects" className="buttons-special">
                             Projects
+                        </a>
+                        <a href="#about" className="buttons">
+                            About
                         </a>
                     </div>
                 </div>

@@ -3,11 +3,8 @@ import "./main.css";
 import { BiSolidSun } from "react-icons/bi";
 import { HiMenu } from "react-icons/hi";
 export default function Header() {
-    function showMenu() {
-        document.getElementById("nav-bar").classList.toggle("nav-show-items");
-    }
     const [scrolled, setScrolled] = useState(false);
-
+    const [showMenu, setShowMenu] = useState(true);
     const handleScroll = () => {
         if (window.scrollY > 0) {
             setScrolled(true);
@@ -31,16 +28,36 @@ export default function Header() {
             </h1>
             <div className="flex-buffer"></div>
             <ul className="nav-header-item nav-list" id="nav-bar">
-                <a href="#" className="nav-flex-item">
+                <a
+                    href="#"
+                    className={`nav-flex-item  ${
+                        showMenu ? "nav-show-items" : ""
+                    }`}
+                >
                     Home
                 </a>
-                <a href="#about" className="nav-flex-item">
+                <a
+                    href="#about"
+                    className={`nav-flex-item  ${
+                        showMenu ? "nav-show-items" : ""
+                    }`}
+                >
                     About
                 </a>
-                <a href="#projects" className="nav-flex-item">
+                <a
+                    href="#projects"
+                    className={`nav-flex-item  ${
+                        showMenu ? "nav-show-items" : ""
+                    }`}
+                >
                     Projects
                 </a>
-                <a href="#skills" className="nav-flex-item">
+                <a
+                    href="#skills"
+                    className={`nav-flex-item  ${
+                        showMenu ? "nav-show-items" : ""
+                    }`}
+                >
                     Skills
                 </a>
 
@@ -49,7 +66,10 @@ export default function Header() {
             <a href="#footer" className="buttons-special">
                 Contact Me
             </a>
-            <button className="menu-icon nav-header-item" onClick={showMenu}>
+            <button
+                className="menu-icon nav-header-item"
+                onClick={() => setShowMenu((prev) => !prev)}
+            >
                 <HiMenu />
             </button>
         </nav>

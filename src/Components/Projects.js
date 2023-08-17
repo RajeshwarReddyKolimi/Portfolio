@@ -43,8 +43,8 @@ export default function Projects() {
                     imgSrc="55"
                     title="Portfolio"
                     skills={skills2}
-                    git=""
-                    web=""
+                    git="https://github.com/RajeshwarReddyKolimi/Portfolio"
+                    web="https://portfolio-rajeshwar.netlify.app/"
                     description="Portfolio is a React based website which features my personal and professional information. It provides basic details of me, skills, projects, contact details in a attractive manner."
                 />
                 <ProjectCard

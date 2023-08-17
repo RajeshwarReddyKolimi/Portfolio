@@ -39,6 +39,15 @@ export default function About() {
                     <div className="detail">
                         <b>Study:</b>&nbsp;Matrusri Engineering College
                     </div>
+                    <div className="detail">
+                        <b>Mobile:</b>&nbsp;+91 7671817339
+                    </div>
+                    <div className="detail">
+                        <b>Email:</b>&nbsp;kolimirajeshwarreddy@gmail.com
+                    </div>
+                    <div className="detail">
+                        <b>Location:</b>&nbsp;Kamareddy, Telangana
+                    </div>
                 </div>
             </div>
         </section>
