@@ -33,6 +33,7 @@ export default function Header() {
                     className={`nav-flex-item  ${
                         showMenu ? "nav-show-items" : ""
                     }`}
+                    onClick={() => setShowMenu((prev) => !prev)}
                 >
                     Home
                 </a>
@@ -41,6 +42,7 @@ export default function Header() {
                     className={`nav-flex-item  ${
                         showMenu ? "nav-show-items" : ""
                     }`}
+                    onClick={() => setShowMenu((prev) => !prev)}
                 >
                     About
                 </a>
@@ -49,6 +51,7 @@ export default function Header() {
                     className={`nav-flex-item  ${
                         showMenu ? "nav-show-items" : ""
                     }`}
+                    onClick={() => setShowMenu((prev) => !prev)}
                 >
                     Projects
                 </a>
@@ -57,6 +60,7 @@ export default function Header() {
                     className={`nav-flex-item  ${
                         showMenu ? "nav-show-items" : ""
                     }`}
+                    onClick={() => setShowMenu((prev) => !prev)}
                 >
                     Skills
                 </a>
@@ -64,9 +68,10 @@ export default function Header() {
                 <div className="flex-buffer"></div>
                 <a
                     href="#footer"
-                    className={` nav-flex-item  ${
+                    className={` nav-flex-item buttons-special ${
                         showMenu ? "nav-show-items" : ""
                     }`}
+                    onClick={() => setShowMenu((prev) => !prev)}
                 >
                     Contact Me
                 </a>

@@ -23,84 +23,84 @@ export default function Skills() {
                         style={{ color: "#e34f26" }}
                         className="skill-icon"
                     />
-                    <p className="skill-name">HTML</p>
+                    HTML
                 </li>
                 <li className="skill-item">
                     <BiLogoCss3
                         style={{ color: "#002561" }}
                         className="skill-icon"
                     />
-                    <p className="skill-name">CSS</p>
+                    CSS
                 </li>
                 <li className="skill-item">
                     <BiLogoJavascript
                         style={{ color: "#f7df1e" }}
                         className="skill-icon"
                     />
-                    <p className="skill-name">JavaScript</p>
+                    JavaScript
                 </li>
                 <li className="skill-item">
                     <BiLogoReact
                         style={{ color: "#00d8ff" }}
                         className="skill-icon"
                     />
-                    <p className="skill-name">React.js</p>
+                    React.js
                 </li>
                 <li className="skill-item">
                     <BiLogoJava
                         style={{ color: "#5382a1" }}
                         className="skill-icon"
                     />
-                    <p className="skill-name">Java</p>
+                    Java
                 </li>
                 <li className="skill-item">
                     <BiLogoNodejs
                         style={{ color: "#215732" }}
                         className="skill-icon"
                     />
-                    <p className="skill-name">Node.js</p>
+                    Node.js
                 </li>
                 <li className="skill-item">
                     <SiExpress
                         style={{ color: "#333333" }}
                         className="skill-icon"
                     />
-                    <p className="skill-name">Express.js</p>
+                    Express.js
                 </li>
                 <li className="skill-item">
                     <SiMysql
                         style={{ color: "#00758f" }}
                         className="skill-icon"
                     />
-                    <p className="skill-name">MySQL</p>
+                    MySQL
                 </li>
                 <li className="skill-item">
                     <BiLogoMongodb
                         style={{ color: "#589636" }}
                         className="skill-icon"
                     />
-                    <p className="skill-name">MongoDB</p>
+                    MongoDB
                 </li>
                 <li className="skill-item">
                     <BiLogoGithub
                         style={{ color: "#333" }}
                         className="skill-icon"
                     />
-                    <p className="skill-name">Github</p>
+                    Github
                 </li>
                 <li className="skill-item">
                     <BiLogoGit
                         style={{ color: "#F1502F" }}
                         className="skill-icon"
                     />
-                    <p className="skill-name">Git</p>
+                    Git
                 </li>
                 <li className="skill-item">
                     <PiGraph
                         style={{ color: "#C70039" }}
                         className="skill-icon"
                     />
-                    <p className="skill-name">DSA</p>
+                    DSA
                 </li>
             </ul>
         </section>

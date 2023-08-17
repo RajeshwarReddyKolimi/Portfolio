@@ -13,9 +13,8 @@ import {
 export default function Footer() {
     return (
         <footer id="footer" className="section footer-section">
-            <h2 className="section-header">Contact Me</h2>
+            <h2 className="section-header">Lets Connect</h2>
             <div className="contact-holder">
-                <h2>Lets Connect</h2>
                 <div className="contact-item">
                     <a
                         target="_blank"

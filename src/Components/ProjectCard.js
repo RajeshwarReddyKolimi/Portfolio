@@ -5,7 +5,6 @@ export default function ProjectCard(props) {
     const [showProject, setShowProject] = useState(false);
     const { imgSrc, title, skills, description } = props;
     useEffect(() => {
-        console.log("Here");
         if (showProject) document.body.classList.add("unscrollable");
         else document.body.classList.remove("unscrollable");
     }, [showProject]);
