@@ -1,9 +1,14 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./main.css";
 import ProjectPopup from "./ProjectPopup";
 export default function ProjectCard(props) {
     const [showProject, setShowProject] = useState(false);
     const { imgSrc, title, skills, description } = props;
+    useEffect(() => {
+        console.log("Here");
+        if (showProject) document.body.classList.add("unscrollable");
+        else document.body.classList.remove("unscrollable");
+    }, [showProject]);
     return (
         <div className="project-item">
             <img
