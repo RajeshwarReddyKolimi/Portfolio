@@ -37,16 +37,15 @@ export default function ProjectPopup(props) {
                 </div>
                 <div className="project-details">
                     <div className="popup-image">
-                        <img
-                            src={`https://picsum.photos/id/${imgSrc}/1024/1024`}
-                            alt="project"
-                        />
+                        <img src={`${imgSrc}`} alt="project" />
                     </div>
                     <div className="project-info">
                         <h3>Skills Used</h3>
                         <ul className="project-skills">
-                            {skills.map((skill) => (
-                                <li className="skill-used">{skill}</li>
+                            {skills.map((skill, key) => (
+                                <li key={key} className="skill-used">
+                                    {skill}
+                                </li>
                             ))}
                         </ul>
                         <h3>Description</h3>

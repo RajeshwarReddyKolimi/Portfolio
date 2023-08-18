@@ -1,8 +1,19 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./main.css";
 import ProjectCard from "./ProjectCard";
 import { BiLogoChrome } from "react-icons/bi";
+import useIntersectionObserver from "./useIntersectionObserver";
 export default function Projects() {
+    const [showItems, setShowItems] = useState(false);
+    const [targetRef, isIntersecting] = useIntersectionObserver({
+        rootMargin: "0px",
+        threshold: 0.2,
+    });
+    useEffect(() => {
+        if (isIntersecting) {
+            setShowItems(true);
+        }
+    }, [isIntersecting]);
     const skills1 = [
         "HTML",
         "CSS",
@@ -28,11 +39,16 @@ export default function Projects() {
     ];
     const skills6 = ["Arduino", "Arduino IDE", "GPS", "GSM"];
     return (
-        <section id="projects" className="section projects-section">
+        <section
+            ref={targetRef}
+            id="projects"
+            className="section projects-section"
+        >
             <h2 className="section-header">Projects</h2>
             <div className="projects">
                 <ProjectCard
-                    imgSrc="5"
+                    showItems={showItems}
+                    imgSrc="/TaskManager.png"
                     title="Task Manager"
                     skills={skills1}
                     git="https://github.com/RajeshwarReddyKolimi/Task-Manager-App"
@@ -40,7 +56,8 @@ export default function Projects() {
                     description="Task Manager is a web application which allows users to Login/Signup, add, delete, update tasks, set deadlines, set priorities. The website is built using MERN stack and is responsive."
                 />
                 <ProjectCard
-                    imgSrc="55"
+                    showItems={showItems}
+                    imgSrc="/Portfolio.png"
                     title="Portfolio"
                     skills={skills2}
                     git="https://github.com/RajeshwarReddyKolimi/Portfolio"
@@ -48,7 +65,8 @@ export default function Projects() {
                     description="Portfolio is a React based website which features my personal and professional information. It provides basic details of me, skills, projects, contact details in a attractive manner."
                 />
                 <ProjectCard
-                    imgSrc="85"
+                    showItems={showItems}
+                    imgSrc="/TicTacToe.png"
                     title="Tic-Tac-Toe"
                     skills={skills3}
                     git="https://github.com/RajeshwarReddyKolimi/TicTacToe"
@@ -56,7 +74,8 @@ export default function Projects() {
                     description="Tic-Tac-Toe is a classic two player game everyone played atleast once. This is built using React. It uses the basic React concepts in its functionality."
                 />
                 <ProjectCard
-                    imgSrc="29"
+                    showItems={showItems}
+                    imgSrc="/BlogSite.png"
                     title="Blog-Site"
                     skills={skills4}
                     git="https://github.com/RajeshwarReddyKolimi/Rentera-blog"
@@ -64,7 +83,8 @@ export default function Projects() {
                     description="This is a project created to a startup company to display its blogs in a simple and good looking way. It is built using HTML, CSS, JavaScript and Bootstrap."
                 />
                 <ProjectCard
-                    imgSrc="400"
+                    showItems={showItems}
+                    imgSrc="/PressureSensor.png"
                     title="Smart Pressure Sensing System"
                     skills={skills5}
                     git=""
@@ -72,7 +92,8 @@ export default function Projects() {
                     description="Smart Pressure Sensing or Monitoring System is a practical project which helps to automate the current pressure monitoring system. It has features like remote pressure monitoring and alert system. The main technologies involved are Arduino programming, sensors, ESP32."
                 />
                 <ProjectCard
-                    imgSrc="289"
+                    showItems={showItems}
+                    imgSrc="/GPSTracker.png"
                     title="Vehicle Tracking System"
                     skills={skills6}
                     git=""

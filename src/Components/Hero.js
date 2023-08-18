@@ -2,7 +2,18 @@ import React, { useState, useEffect } from "react";
 import "./main.css";
 import { GoArrowUp } from "react-icons/go";
 // import { Link } from 'react-router-dom';
+import useIntersectionObserver from "./useIntersectionObserver";
 export default function Hero() {
+    const [showItems, setShowItems] = useState(false);
+    const [targetRef, isIntersecting] = useIntersectionObserver({
+        rootMargin: "0px",
+        threshold: 0.5,
+    });
+    useEffect(() => {
+        if (isIntersecting) {
+            setShowItems(true);
+        }
+    }, [isIntersecting]);
     const [w, setW] = useState(window.innerWidth);
     const [h, setH] = useState(window.innerHeight);
     useEffect(() => {
@@ -36,7 +47,7 @@ export default function Hero() {
         };
     }, []);
     return (
-        <main className="section hero">
+        <main ref={targetRef} className="section hero">
             <div className="wrapper">
                 <div className="bg-image-container">
                     <div className="bg-image">
@@ -44,15 +55,31 @@ export default function Hero() {
                     </div>
                 </div>
                 <div className="hero-content">
-                    <h3>Hello, I am</h3>
-                    <h1>
+                    <h3
+                        className={`${
+                            showItems ? "show-item-side" : "hide-item-side"
+                        }`}
+                    >
+                        Hello, I am
+                    </h3>
+                    <h1
+                        className={`${
+                            showItems ? "show-item-side" : "hide-item-side"
+                        }`}
+                    >
                         <span style={{ color: "rgb(7, 136, 255)" }}>
                             Rajeshwar Reddy
                         </span>{" "}
                         Kolimi
                     </h1>
-                    <h2>Full Stack Developer</h2>
-                    <div className="flex-list">
+                    <h2
+                        className={`${
+                            showItems ? "show-item-side" : "hide-item-side"
+                        }`}
+                    >
+                        Full Stack Developer
+                    </h2>
+                    <div className={`flex-list`}>
                         <a href="#projects" className="buttons-special">
                             Projects
                         </a>
