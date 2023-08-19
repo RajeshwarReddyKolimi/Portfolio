@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./main.css";
 import { GoArrowUp } from "react-icons/go";
-// import { Link } from 'react-router-dom';
 import useIntersectionObserver from "./useIntersectionObserver";
 export default function Hero() {
     const [showItems, setShowItems] = useState(false);

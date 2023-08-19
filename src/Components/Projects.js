@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./main.css";
 import ProjectCard from "./ProjectCard";
-import { BiLogoChrome } from "react-icons/bi";
 import useIntersectionObserver from "./useIntersectionObserver";
 export default function Projects() {
     const [showItems, setShowItems] = useState(false);
@@ -27,10 +26,26 @@ export default function Projects() {
         "Responsive",
         "JWT",
     ];
-    const skills2 = ["HTML", "CSS", "React.js", "JavaScript", "Responsive"];
+    const skills2 = [
+        "HTML",
+        "CSS",
+        "React.js",
+        "JavaScript",
+        "Responsive",
+        "Git",
+        "GitHub",
+    ];
 
-    const skills3 = ["HTML", "CSS", "React.js", "JavaScript"];
-    const skills4 = ["HTML", "CSS", "Bootstrap", "JavaScript", "Responsive"];
+    const skills3 = ["HTML", "CSS", "React.js", "JavaScript", "Git", "GitHub"];
+    const skills4 = [
+        "HTML",
+        "CSS",
+        "Bootstrap",
+        "JavaScript",
+        "Responsive",
+        "Git",
+        "GitHub",
+    ];
     const skills5 = [
         "ESP32",
         "Pressure Sensor",

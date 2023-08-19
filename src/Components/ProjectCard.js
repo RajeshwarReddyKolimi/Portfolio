@@ -4,6 +4,20 @@ import ProjectPopup from "./ProjectPopup";
 export default function ProjectCard(props) {
     const [showProject, setShowProject] = useState(false);
     const { imgSrc, title, skills, description, showItems } = props;
+    // const history = useHistory();
+
+    const handleNavigation = (e) => {
+        e.preventDefault();
+        setShowProject(false);
+    };
+
+    useEffect(() => {
+        window.addEventListener("popstate", handleNavigation);
+        return () => {
+            window.removeEventListener("popstate", handleNavigation);
+        };
+    }, []);
+
     useEffect(() => {
         if (showProject) document.body.classList.add("unscrollable");
         else document.body.classList.remove("unscrollable");
