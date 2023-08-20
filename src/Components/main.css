@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
 }
 html {
     scroll-snap-type: y mandatory;
@@ -9,23 +10,15 @@ html {
 .section {
     width: 80vw;
     margin: auto;
-    /* height: 100vh; */
-    /* scroll-snap-align: start;
-    scroll-snap-stop: always; */
     overflow: auto;
     display: flex;
     flex-direction: column;
     padding: 1rem;
 }
-.section {
-    /* opacity: 0; */
-    /* transition: opacity 0.5s; */
-}
 .section.visible {
     opacity: 1;
 }
 .section-header {
-    /* text-align: left; */
     margin: 0rem;
     margin: auto;
     padding: 1rem;
