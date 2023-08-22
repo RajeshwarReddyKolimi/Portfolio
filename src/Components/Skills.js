@@ -36,7 +36,7 @@ export default function Skills() {
                         style={{ color: "#e34f26" }}
                         className="skill-icon"
                     />
-                    HTML
+                    <p> HTML</p>{" "}
                 </li>
                 <li
                     className={` skill-item ${
@@ -47,7 +47,7 @@ export default function Skills() {
                         style={{ color: "#002561" }}
                         className="skill-icon"
                     />
-                    CSS
+                    <p> CSS</p>{" "}
                 </li>
                 <li
                     className={` skill-item ${
@@ -58,7 +58,7 @@ export default function Skills() {
                         style={{ color: "#f7df1e" }}
                         className="skill-icon"
                     />
-                    JavaScript
+                    <p> JavaScript</p>{" "}
                 </li>
                 <li
                     className={` skill-item ${
@@ -69,7 +69,7 @@ export default function Skills() {
                         style={{ color: "#00d8ff" }}
                         className="skill-icon"
                     />
-                    React.js
+                    <p> React.js</p>{" "}
                 </li>
                 <li
                     className={` skill-item ${
@@ -80,7 +80,7 @@ export default function Skills() {
                         style={{ color: "#5382a1" }}
                         className="skill-icon"
                     />
-                    Java
+                    <p> Java</p>{" "}
                 </li>
                 <li
                     className={` skill-item ${
@@ -91,7 +91,7 @@ export default function Skills() {
                         style={{ color: "#215732" }}
                         className="skill-icon"
                     />
-                    Node.js
+                    <p> Node.js</p>{" "}
                 </li>
                 <li
                     className={` skill-item ${
@@ -102,7 +102,7 @@ export default function Skills() {
                         style={{ color: "#333333" }}
                         className="skill-icon"
                     />
-                    Express.js
+                    <p> Express.js</p>{" "}
                 </li>
                 <li
                     className={` skill-item ${
@@ -113,7 +113,7 @@ export default function Skills() {
                         style={{ color: "#00758f" }}
                         className="skill-icon"
                     />
-                    MySQL
+                    <p> MySQL</p>{" "}
                 </li>
                 <li
                     className={` skill-item ${
@@ -124,7 +124,7 @@ export default function Skills() {
                         style={{ color: "#589636" }}
                         className="skill-icon"
                     />
-                    MongoDB
+                    <p> MongoDB</p>{" "}
                 </li>
                 <li
                     className={` skill-item ${
@@ -135,7 +135,7 @@ export default function Skills() {
                         style={{ color: "#333" }}
                         className="skill-icon"
                     />
-                    Github
+                    <p> Github</p>{" "}
                 </li>
                 <li
                     className={` skill-item ${
@@ -146,7 +146,7 @@ export default function Skills() {
                         style={{ color: "#F1502F" }}
                         className="skill-icon"
                     />
-                    Git
+                    <p> Git</p>{" "}
                 </li>
                 <li
                     className={` skill-item ${
@@ -157,7 +157,7 @@ export default function Skills() {
                         style={{ color: "#C70039" }}
                         className="skill-icon"
                     />
-                    DSA
+                    <p> DSA</p>{" "}
                 </li>
             </ul>
         </section>

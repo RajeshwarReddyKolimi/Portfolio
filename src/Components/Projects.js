@@ -35,7 +35,7 @@ export default function Projects() {
         "Git",
         "GitHub",
     ];
-
+    const skills7 = ["HTML", "CSS", "React.js", "JavaScript", "Git", "GitHub"];
     const skills3 = ["HTML", "CSS", "React.js", "JavaScript", "Git", "GitHub"];
     const skills4 = [
         "HTML",
@@ -81,11 +81,20 @@ export default function Projects() {
                 />
                 <ProjectCard
                     showItems={showItems}
+                    imgSrc="/CardMatching.png"
+                    title="Card Matching Game"
+                    skills={skills7}
+                    git="https://github.com/RajeshwarReddyKolimi/card-matching-game"
+                    web="https://card-matching-game-by-rajeshwar.netlify.app/"
+                    description="Card Matching is a single player memory game, which involves memorising and matching pair of cards. This project is built using React.js, HTML, CSS and the game is responsive."
+                />
+                <ProjectCard
+                    showItems={showItems}
                     imgSrc="/TicTacToe.png"
                     title="Tic-Tac-Toe"
                     skills={skills3}
-                    git="https://github.com/RajeshwarReddyKolimi/TicTacToe"
-                    web=""
+                    git="https://github.com/RajeshwarReddyKolimi/Tic-Tac-Toe"
+                    web="https://tic-tac-toe-by-rajeshwar.netlify.app/"
                     description="Tic-Tac-Toe is a classic two player game everyone played atleast once. This is built using React. It uses the basic React concepts in its functionality."
                 />
                 <ProjectCard
