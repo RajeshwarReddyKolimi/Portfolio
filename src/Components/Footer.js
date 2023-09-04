@@ -133,15 +133,7 @@ export default function Footer() {
                         />
                     </a>
                 </div>
-                <div>
-                    <a
-                        href="https://drive.google.com/file/d/16axtkiqVPVur3MtB4sKI2or23ZvNmV32/view?usp=sharing"
-                        className="buttons"
-                        target="_blank"
-                    >
-                        View Resume
-                    </a>
-                </div>
+                
             </div>
         </footer>
     );
