@@ -53,6 +53,15 @@ export default function Projects() {
         "Arduino IDE",
     ];
     const skills6 = ["Arduino", "Arduino IDE", "GPS", "GSM"];
+    const skills8 = [
+        "HTML",
+        "CSS",
+        "React.js",
+        "JavaScript",
+        "REST APIs",
+        "Git",
+        "GitHub",
+    ];
     return (
         <section
             ref={targetRef}
@@ -63,6 +72,15 @@ export default function Projects() {
             <div className="projects">
                 <ProjectCard
                     showItems={showItems}
+                    imgSrc="/Portfolio.png"
+                    title="Portfolio"
+                    skills={skills2}
+                    git="https://github.com/RajeshwarReddyKolimi/Portfolio"
+                    web="https://portfolio-rajeshwar.netlify.app/"
+                    description="Portfolio is a React based website which features my personal and professional information. It provides basic details of me, skills, projects, contact details in a attractive manner."
+                />
+                <ProjectCard
+                    showItems={showItems}
                     imgSrc="/TaskManager.png"
                     title="Task Manager"
                     skills={skills1}
@@ -70,14 +88,15 @@ export default function Projects() {
                     web="https://task-manager-by-rajeshwar.netlify.app/"
                     description="Task Manager is a web application which allows users to Login/Signup, add, delete, update tasks, set deadlines, set priorities. The website is built using MERN stack and is responsive."
                 />
+
                 <ProjectCard
                     showItems={showItems}
-                    imgSrc="/Portfolio.png"
-                    title="Portfolio"
-                    skills={skills2}
-                    git="https://github.com/RajeshwarReddyKolimi/Portfolio"
-                    web="https://portfolio-rajeshwar.netlify.app/"
-                    description="Portfolio is a React based website which features my personal and professional information. It provides basic details of me, skills, projects, contact details in a attractive manner."
+                    imgSrc="/MovieAPI.png"
+                    title="MovieBase"
+                    skills={skills8}
+                    git="https://github.com/RajeshwarReddyKolimi/MovieBase"
+                    web="https://moviebase-by-rajeshwar.netlify.app/"
+                    description="The MovieBase is a React and RESTAPI based web application which has the data of various Movies, Series, Artists, etc. This data is taken from TMDB API. The Site has features like Searching Movies, Series, Artists; view detailed information regarding each; various filtering options like language, genre, year, rating, etc; provides Streaming platform  information for each Movie and Series."
                 />
                 <ProjectCard
                     showItems={showItems}
