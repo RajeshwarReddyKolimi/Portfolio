@@ -105,7 +105,7 @@ export default function Footer() {
                     <a
                         target="_blank"
                         className={`${showItems ? "show-item" : "hide-item"}`}
-                        href="https://www.linkedin.com/in/rajeshwar-reddy-kolimi-38580821b/"
+                        href="https://www.linkedin.com/in/rajeshwar-reddy-kolimi/"
                     >
                         <BiLogoLinkedinSquare
                             className="contact-icons"
@@ -133,7 +133,6 @@ export default function Footer() {
                         />
                     </a>
                 </div>
-                
             </div>
         </footer>
     );

@@ -51,19 +51,13 @@ export default function About() {
                         &nbsp;Bachelor of Engineering
                     </div>
 
+                    
                     <div
                         className={`detail ${
                             showItems ? "show-item" : "hide-item"
                         }`}
                     >
-                        <b>Mobile:</b>&nbsp;+91 7671817339
-                    </div>
-                    <div
-                        className={`detail ${
-                            showItems ? "show-item" : "hide-item"
-                        }`}
-                    >
-                        <b>Email:</b>&nbsp;kolimirajeshwarreddy@gmail.com
+                        <b>Email:</b>&nbsp;<a href="mailto:kolimirajeshwarreddy@gmail.com">kolimirajeshwarreddy@gmail.com</a>
                     </div>
                     <div
                         className={`detail ${
