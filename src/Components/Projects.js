@@ -62,6 +62,20 @@ export default function Projects() {
         "Git",
         "GitHub",
     ];
+    const skillsEcom = [
+        "HTML",
+        "CSS",
+        "React",
+        "Redux",
+        "JavaScript",
+        "Node",
+        "Express",
+        "MongoDB",
+        "Git",
+        "GitHub",
+        "Responsive",
+        "JWT",
+    ];
     return (
         <section
             ref={targetRef}
@@ -70,6 +84,21 @@ export default function Projects() {
         >
             <h2 className="section-header">Projects</h2>
             <div className="projects">
+                <ProjectCard
+                    showItems={showItems}
+                    imgSrc="/BlackBasket.png"
+                    title="BlackBasket"
+                    skills={skillsEcom}
+                    git="https://github.com/RajeshwarReddyKolimi/BlackBasket"
+                    web="https://blackbasket-by-rajeshwar.netlify.app/"
+                    description="
+• BlackBasket is a fully responsive eCommerce website built from scratch using the MERN stack and Redux Toolkit.
+• User log in and security are implemented with JSON Web Tokens (JWT) for authentication.
+• Has separate dashboards for admins and users. Admins can manage products and coupons by adding, updating, or
+deleting them. Admins also have the ability to block, unblock, or remove users.
+• Users can easily navigate, search for products, and apply filters. Users can add products to their cart, save items for
+later, apply coupons during checkout, manage addresses, submit queries, and review products."
+                />
                 <ProjectCard
                     showItems={showItems}
                     imgSrc="/Portfolio.png"
