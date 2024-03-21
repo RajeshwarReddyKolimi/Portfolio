@@ -35,8 +35,14 @@ export default function Projects() {
         "Git",
         "GitHub",
     ];
-    const skills7 = ["HTML", "CSS", "React.js", "JavaScript", "Git", "GitHub"];
-    const skills3 = ["HTML", "CSS", "React.js", "JavaScript", "Git", "GitHub"];
+    const skillsGame = [
+        "HTML",
+        "CSS",
+        "React.js",
+        "JavaScript",
+        "Git",
+        "GitHub",
+    ];
     const skills4 = [
         "HTML",
         "CSS",
@@ -76,6 +82,21 @@ export default function Projects() {
         "Responsive",
         "JWT",
     ];
+    const skillsChat = [
+        "HTML",
+        "CSS",
+        "React",
+        "Redux",
+        "JavaScript",
+        "Node",
+        "Express",
+        "Socket.io",
+        "MongoDB",
+        "Git",
+        "GitHub",
+        "Responsive",
+        "JWT",
+    ];
     return (
         <section
             ref={targetRef}
@@ -101,6 +122,24 @@ later, apply coupons during checkout, manage addresses, submit queries, and revi
                 />
                 <ProjectCard
                     showItems={showItems}
+                    imgSrc="/chitchat.png"
+                    title="ChitChat"
+                    skills={skillsChat}
+                    git="https://github.com/RajeshwarReddyKolimi/ChatApplication"
+                    web="https://chitchat-by-rajeshwar.netlify.app/"
+                    description="ChitChat is a chat application built using Socket.io and MERN stack where users can register and chat individually"
+                />
+                <ProjectCard
+                    showItems={showItems}
+                    imgSrc="/MovieAPI.png"
+                    title="MovieBase"
+                    skills={skills8}
+                    git="https://github.com/RajeshwarReddyKolimi/MovieBase"
+                    web="https://moviebase-by-rajeshwar.netlify.app/"
+                    description="The MovieBase is a React and RESTAPI based web application which has the data of various Movies, Series, Artists, etc. This data is taken from TMDB API. The Site has features like Searching Movies, Series, Artists; view detailed information regarding each; various filtering options like language, genre, year, rating, etc; provides Streaming platform  information for each Movie and Series."
+                />
+                <ProjectCard
+                    showItems={showItems}
                     imgSrc="/Portfolio.png"
                     title="Portfolio"
                     skills={skills2}
@@ -117,33 +156,14 @@ later, apply coupons during checkout, manage addresses, submit queries, and revi
                     web="https://task-manager-by-rajeshwar.netlify.app/"
                     description="Task Manager is a web application which allows users to Login/Signup, add, delete, update tasks, set deadlines, set priorities. The website is built using MERN stack and is responsive."
                 />
-
                 <ProjectCard
                     showItems={showItems}
-                    imgSrc="/MovieAPI.png"
-                    title="MovieBase"
-                    skills={skills8}
-                    git="https://github.com/RajeshwarReddyKolimi/MovieBase"
-                    web="https://moviebase-by-rajeshwar.netlify.app/"
-                    description="The MovieBase is a React and RESTAPI based web application which has the data of various Movies, Series, Artists, etc. This data is taken from TMDB API. The Site has features like Searching Movies, Series, Artists; view detailed information regarding each; various filtering options like language, genre, year, rating, etc; provides Streaming platform  information for each Movie and Series."
-                />
-                <ProjectCard
-                    showItems={showItems}
-                    imgSrc="/CardMatching.png"
-                    title="Card Matching Game"
-                    skills={skills7}
-                    git="https://github.com/RajeshwarReddyKolimi/card-matching-game"
-                    web="https://card-matching-game-by-rajeshwar.netlify.app/"
-                    description="Card Matching is a single player memory game, which involves memorising and matching pair of cards. This project is built using React.js, HTML, CSS and the game is responsive."
-                />
-                <ProjectCard
-                    showItems={showItems}
-                    imgSrc="/TicTacToe.png"
-                    title="Tic-Tac-Toe"
-                    skills={skills3}
-                    git="https://github.com/RajeshwarReddyKolimi/Tic-Tac-Toe"
-                    web="https://tic-tac-toe-by-rajeshwar.netlify.app/"
-                    description="Tic-Tac-Toe is a classic two player game everyone played atleast once. This is built using React. It uses the basic React concepts in its functionality."
+                    imgSrc="/gameZone.png"
+                    title="GameZone"
+                    skills={skillsGame}
+                    git="https://github.com/RajeshwarReddyKolimi/GameZone"
+                    web="https://gamezone-by-rajeshwar.netlify.app/"
+                    description="GameZone is a React based gaming site which has board games like Tic-Tac-Toe and Card matching Memory Game"
                 />
                 <ProjectCard
                     showItems={showItems}

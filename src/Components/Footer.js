@@ -5,7 +5,12 @@ import useIntersectionObserver from "./useIntersectionObserver";
 import "./main.css";
 import { MdLocationOn, MdEmail } from "react-icons/md";
 import { IoMdCall } from "react-icons/io";
-import { SiLeetcode, SiGeeksforgeeks, SiHackerrank } from "react-icons/si";
+import {
+    SiLeetcode,
+    SiGeeksforgeeks,
+    SiHackerrank,
+    SiCodechef,
+} from "react-icons/si";
 import { FaHackerrank } from "react-icons/fa";
 import {
     BiLogoTwitter,
@@ -69,6 +74,14 @@ export default function Footer() {
                             style={{ color: "orange" }}
                         />
                     </a>
+                    <a
+                        target="_blank"
+                        className={`${showItems ? "show-item" : "hide-item"}`}
+                        href="https://www.codechef.com/users/rajeshwar_r_k"
+                    >
+                        <SiCodechef className="contact-icons" />
+                    </a>
+
                     <a
                         target="_blank"
                         className={`${showItems ? "show-item" : "hide-item"}`}

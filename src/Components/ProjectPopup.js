@@ -37,7 +37,9 @@ export default function ProjectPopup(props) {
                 </div>
                 <div className="project-details">
                     <div className="popup-image">
-                        <img src={`${imgSrc}`} alt="project" />
+                        <a href={web} target="_blank">
+                            <img src={`${imgSrc}`} alt="project" />
+                        </a>
                     </div>
                     <div className="project-info">
                         <h3>Skills Used</h3>

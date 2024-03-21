@@ -10,8 +10,9 @@ import {
     BiLogoMongodb,
     BiLogoGithub,
     BiLogoGit,
+    BiLogoRedux,
 } from "react-icons/bi";
-import { PiGraph } from "react-icons/pi";
+import { PiBracketsCurly, PiBracketsCurlyBold, PiGraph } from "react-icons/pi";
 import { SiExpress, SiMysql } from "react-icons/si";
 import useIntersectionObserver from "./useIntersectionObserver.js";
 export default function Skills() {
@@ -27,6 +28,28 @@ export default function Skills() {
         <section ref={targetRef} id="skills" className="section skills-section">
             <h2 className="section-header">Skills</h2>
             <ul className="skills">
+                <li
+                    className={` skill-item ${
+                        showItems ? "show-item" : "hide-item"
+                    }`}
+                >
+                    <PiGraph
+                        style={{ color: "#C70039" }}
+                        className="skill-icon"
+                    />
+                    <p> DSA</p>{" "}
+                </li>
+                <li
+                    className={` skill-item ${
+                        showItems ? "show-item" : "hide-item"
+                    }`}
+                >
+                    <BiLogoJava
+                        style={{ color: "#5382a1" }}
+                        className="skill-icon"
+                    />
+                    <p> Java</p>{" "}
+                </li>
                 <li
                     className={` skill-item ${
                         showItems ? "show-item" : "hide-item"
@@ -76,12 +99,13 @@ export default function Skills() {
                         showItems ? "show-item" : "hide-item"
                     }`}
                 >
-                    <BiLogoJava
-                        style={{ color: "#5382a1" }}
+                    <BiLogoRedux
+                        style={{ color: "#764abc" }}
                         className="skill-icon"
                     />
-                    <p> Java</p>{" "}
+                    <p> Redux</p>{" "}
                 </li>
+
                 <li
                     className={` skill-item ${
                         showItems ? "show-item" : "hide-item"
@@ -131,6 +155,18 @@ export default function Skills() {
                         showItems ? "show-item" : "hide-item"
                     }`}
                 >
+                    <PiBracketsCurly
+                        style={{ color: "black" }}
+                        className="skill-icon"
+                    />
+                    <p>REST API</p>{" "}
+                </li>
+
+                <li
+                    className={` skill-item ${
+                        showItems ? "show-item" : "hide-item"
+                    }`}
+                >
                     <BiLogoGithub
                         style={{ color: "#333" }}
                         className="skill-icon"
@@ -147,17 +183,6 @@ export default function Skills() {
                         className="skill-icon"
                     />
                     <p> Git</p>{" "}
-                </li>
-                <li
-                    className={` skill-item ${
-                        showItems ? "show-item" : "hide-item"
-                    }`}
-                >
-                    <PiGraph
-                        style={{ color: "#C70039" }}
-                        className="skill-icon"
-                    />
-                    <p> DSA</p>{" "}
                 </li>
             </ul>
         </section>
