@@ -104,7 +104,7 @@ export default function Projects() {
             className="section projects-section"
         >
             <h2 className="section-header">Projects</h2>
-            <div className="projects">
+            <div className="projects section-inner">
                 <ProjectCard
                     showItems={showItems}
                     imgSrc="/BlackBasket.png"

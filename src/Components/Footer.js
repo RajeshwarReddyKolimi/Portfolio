@@ -32,7 +32,7 @@ export default function Footer() {
     return (
         <footer ref={targetRef} id="footer" className="section footer-section">
             <h2 className="section-header">Lets Connect</h2>
-            <div className="contact-holder">
+            <div className="contact-holder section-inner">
                 <div className="contact-item">
                     <a
                         target="_blank"

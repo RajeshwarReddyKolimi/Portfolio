@@ -11,9 +11,10 @@ import {
     BiLogoGithub,
     BiLogoGit,
     BiLogoRedux,
+    BiLogoSpringBoot,
 } from "react-icons/bi";
 import { PiBracketsCurly, PiBracketsCurlyBold, PiGraph } from "react-icons/pi";
-import { SiExpress, SiMysql } from "react-icons/si";
+import { SiExpress, SiMysql, SiNeo4J } from "react-icons/si";
 import useIntersectionObserver from "./useIntersectionObserver.js";
 export default function Skills() {
     const [showItems, setShowItems] = useState(false);
@@ -27,7 +28,7 @@ export default function Skills() {
     return (
         <section ref={targetRef} id="skills" className="section skills-section">
             <h2 className="section-header">Skills</h2>
-            <ul className="skills">
+            <ul className="skills section-inner">
                 <li
                     className={` skill-item ${
                         showItems ? "show-item" : "hide-item"
@@ -127,6 +128,28 @@ export default function Skills() {
                         className="skill-icon"
                     />
                     <p> Express.js</p>{" "}
+                </li>
+                <li
+                    className={` skill-item ${
+                        showItems ? "show-item" : "hide-item"
+                    }`}
+                >
+                    <BiLogoSpringBoot
+                        style={{ color: "#87BD48" }}
+                        className="skill-icon"
+                    />
+                    <p> Spring Boot</p>{" "}
+                </li>
+                <li
+                    className={` skill-item ${
+                        showItems ? "show-item" : "hide-item"
+                    }`}
+                >
+                    <SiNeo4J
+                        style={{ color: "black" }}
+                        className="skill-icon"
+                    />
+                    <p> Neo4J</p>{" "}
                 </li>
                 <li
                     className={` skill-item ${

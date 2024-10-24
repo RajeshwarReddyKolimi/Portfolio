@@ -47,6 +47,15 @@ export default function Header() {
                     About
                 </a>
                 <a
+                    href="#experience"
+                    className={`nav-flex-item  ${
+                        showMenu ? "nav-show-items" : ""
+                    }`}
+                    onClick={() => setShowMenu((prev) => !prev)}
+                >
+                    Experience
+                </a>
+                <a
                     href="#projects"
                     className={`nav-flex-item  ${
                         showMenu ? "nav-show-items" : ""

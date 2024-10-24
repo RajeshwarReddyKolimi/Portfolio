@@ -18,7 +18,7 @@ export default function About() {
     return (
         <section ref={targetRef} id="about" className="section about-section">
             <h2 className="section-header">About Me</h2>
-            <div className="profile details-div">
+            <div className="profile details-div section-inner">
                 <img
                     className={`profile-pic ${
                         showItems ? "show-item" : "hide-item"
@@ -51,13 +51,15 @@ export default function About() {
                         &nbsp;Bachelor of Engineering
                     </div>
 
-                    
                     <div
                         className={`detail ${
                             showItems ? "show-item" : "hide-item"
                         }`}
                     >
-                        <b>Email:</b>&nbsp;<a href="mailto:kolimirajeshwarreddy@gmail.com">kolimirajeshwarreddy@gmail.com</a>
+                        <b>Email:</b>&nbsp;
+                        <a href="mailto:kolimirajeshwarreddy@gmail.com">
+                            kolimirajeshwarreddy@gmail.com
+                        </a>
                     </div>
                     <div
                         className={`detail ${
@@ -71,12 +73,13 @@ export default function About() {
                             showItems ? "show-item" : "hide-item"
                         }`}
                     >
-                        I am a 2023 Engineering graduate, eager to launch my
-                        career as a Full Stack Developer. I have a solid
-                        foundation in computer science and a passion for both
-                        front-end and back-end development. I have good problem
-                        solving skills. I am well-equipped to contribute to
-                        dynamic and innovative projects.
+                        I am a 2023 Engineering graduate, currently full-stack
+                        developer intern, eager to launch my career as a Full
+                        Stack Developer. I have a solid foundation in computer
+                        science and a passion for both front-end and back-end
+                        development. I have good problem solving skills. I am
+                        well-equipped to contribute to dynamic and innovative
+                        projects.
                     </div>
                     <div
                         className={`detail ${
